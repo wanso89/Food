@@ -81,8 +81,8 @@ swal({
     </div>
     <div class="collapse navbar-collapse" id="myNavbar2">
       <ul class="nav navbar-nav nav-tabs">
-        <li class="active"><a href="#">FoodFeed</a></li>
-        <li><a href="mydiary.jsp">My Diary</a></li>
+        <li><a href="main.jsp">FoodFeed</a></li>
+        <li class="active"><a href="#">My Diary</a></li>
         <li><a href="#">My Pick</a></li>
         <li><a href="#">Ranking</a></li>
       </ul>
@@ -116,9 +116,7 @@ swal({
   <div class="row">
     <div class="col-sm-4  rel">
       <div class=" panel-default">
-        <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
-    </div>
+
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
       </div>
@@ -126,18 +124,14 @@ swal({
     
   	<div class="col-sm-4  rel">
       <div class=" panel-default">
-        <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
-    </div>
+
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
       </div>
     </div>
  <div class="col-sm-4  rel">
       <div class=" panel-default">
-        <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
-    </div>
+
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
       </div>
@@ -149,9 +143,7 @@ swal({
   <div class="row">
     <div class="col-sm-4  rel">
       <div class=" panel-default">
-        <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
-    </div>
+
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
       </div>
@@ -159,18 +151,14 @@ swal({
     
   	<div class="col-sm-4  rel">
       <div class=" panel-default">
-        <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
-    </div>
+
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
       </div>
     </div>
  <div class="col-sm-4  rel">
       <div class=" panel-default">
-        <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
-    </div>
+
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
       </div>
@@ -182,27 +170,21 @@ swal({
   <div class="row">
      <div class="col-sm-4  rel">
       <div class=" panel-default">
-        <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
-    </div>
+
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
       </div>
     </div>
   	 <div class="col-sm-4  rel">
       <div class=" panel-default">
-        <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
-    </div>
+
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
       </div>
     </div>
  	 <div class="col-sm-4  rel">
       <div class=" panel-default">
-        <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
-    </div>
+
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
       </div>
