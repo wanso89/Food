@@ -83,7 +83,7 @@ swal({
       <ul class="nav navbar-nav nav-tabs">
         <li><a href="main.jsp">FoodFeed</a></li>
         <li class="active"><a href="#">My Diary</a></li>
-        <li><a href="#">My Pick</a></li>
+        <li><a href="mypick.jsp">My Pick</a></li>
         <li><a href="#">Ranking</a></li>
       </ul>
     </div>
