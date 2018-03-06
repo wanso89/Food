@@ -1,6 +1,7 @@
 package member.controller;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,31 +14,37 @@ import javax.servlet.http.HttpSession;
 import member.dto.MemberDTO;
 import member.service.MemberService;
 
-@WebServlet("/MemberJoinServlet")
-public class MemberJoinServlet extends HttpServlet {
+@WebServlet("/MemberLoginServlet")
+public class MemberLoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-request.setCharacterEncoding("utf-8");
 		
-		String userName = request.getParameter("userName");
 		String userId = request.getParameter("userId");
 		String passwd = request.getParameter("passwd");
-		String email = request.getParameter("email");
 		
-		MemberDTO memberDTO = 
-				new MemberDTO(userName,userId,passwd,email);
+		HashMap<String,String> map = new HashMap<String,String>();
+		map.put("userId",userId);
+		map.put("passwd",passwd);
+		
 		MemberService memberService = new MemberService();
+		MemberDTO memberDTO = memberService.memberLogin(map);
+		String nextPage = "main.jsp";
+		boolean loginResult = false;
 		
-		boolean result = memberService.MemberInsert(memberDTO);
+		if(memberDTO != null) {
+			loginResult = true;
+			HttpSession session = request.getSession();
+			session.setAttribute("loginInfo",memberDTO);
+		} else {
+			loginResult = false;
+		}
 		
-		request.setAttribute("result", result);
-		RequestDispatcher dis = request.getRequestDispatcher("main.jsp");
+		request.setAttribute("loginResult", loginResult);
+		RequestDispatcher dis = request.getRequestDispatcher(nextPage);
 		dis.forward(request, response);
-		
 	}
 
 }

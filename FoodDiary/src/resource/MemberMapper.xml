@@ -8,4 +8,10 @@
 	insert into member(userid,passwd,username,email) 
 	values(#{userId},#{passwd},#{userName},#{email})
 	</insert>
+	
+	<select id="memberLogin" parameterType="hashmap" resultType="MemberDTO">
+	select userid, passwd from member
+	where userid = #{userId}
+	and passwd = #{passwd}
+	</select>
 </mapper>
