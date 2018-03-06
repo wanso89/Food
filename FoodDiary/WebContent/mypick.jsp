@@ -82,13 +82,14 @@ swal({
     <div class="collapse navbar-collapse" id="myNavbar2">
       <ul class="nav navbar-nav nav-tabs">
         <li><a href="main.jsp">FoodFeed</a></li>
-        <li class="active"><a href="#">My Diary</a></li>
-        <li><a href="mypick.jsp">My Pick</a></li>
+        <li><a href="mydiary.jsp">My Diary</a></li>
+        <li class="active"><a href="#">My Pick</a></li>
         <li><a href="ranking.jsp">Ranking</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
 
   <br><br>
  <div class="container text-center">    
