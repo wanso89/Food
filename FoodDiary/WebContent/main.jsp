@@ -6,7 +6,7 @@
    <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Food Diary</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main-css.css">
@@ -20,7 +20,9 @@
 }
 .heart{
 	position: absolute;
-	top: 7px;
+	top: 8px;
+	max-width:50%;
+	right:8px;
 }
  
  </style>
@@ -84,7 +86,7 @@ swal({
         <li class="active"><a href="#">FoodFeed</a></li>
         <li><a href="mydiary.jsp">My Diary</a></li>
         <li><a href="mypick.jsp">My Pick</a></li>
-        <li><a href="#">Ranking</a></li>
+        <li><a href="ranking.jsp">Ranking</a></li>
       </ul>
     </div>
   </div>
@@ -117,7 +119,7 @@ swal({
     <div class="col-sm-4  rel">
       <div class=" panel-default">
         <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
+    <img src="image/like_b.svg" class="heart"  alt="empty heart" onclick="swap(this)">
     </div>
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
@@ -127,7 +129,7 @@ swal({
   	<div class="col-sm-4  rel">
       <div class=" panel-default">
         <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
+    <img src="image/like_b.svg" class="heart"  alt="empty heart" onclick="swap(this)">
     </div>
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
@@ -136,7 +138,7 @@ swal({
  <div class="col-sm-4  rel">
       <div class=" panel-default">
         <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
+    <img src="image/like_b.svg" class="heart"  alt="empty heart" onclick="swap(this)">
     </div>
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
@@ -150,7 +152,7 @@ swal({
     <div class="col-sm-4  rel">
       <div class=" panel-default">
         <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
+    <img src="image/like_b.svg" class="heart"  alt="empty heart" onclick="swap(this)">
     </div>
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
@@ -160,7 +162,7 @@ swal({
   	<div class="col-sm-4  rel">
       <div class=" panel-default">
         <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
+    <img src="image/like_b.svg" class="heart"  alt="empty heart" onclick="swap(this)">
     </div>
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
@@ -169,7 +171,7 @@ swal({
  <div class="col-sm-4  rel">
       <div class=" panel-default">
         <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
+    <img src="image/like_b.svg" class="heart"  alt="empty heart" onclick="swap(this)">
     </div>
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
@@ -183,7 +185,7 @@ swal({
      <div class="col-sm-4  rel">
       <div class=" panel-default">
         <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
+    <img src="image/like_b.svg" class="heart"  alt="empty heart" onclick="swap(this)">
     </div>
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
@@ -192,7 +194,7 @@ swal({
   	 <div class="col-sm-4  rel">
       <div class=" panel-default">
         <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
+    <img src="image/like_b.svg" class="heart"  alt="empty heart" onclick="swap(this)">
     </div>
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
@@ -201,7 +203,7 @@ swal({
  	 <div class="col-sm-4  rel">
       <div class=" panel-default">
         <div class="col-sm-3 col-sm-offset-9 ">
-    <img src="image/like_b.svg" class="heart" style="min-width:10%" alt="empty heart" onclick="swap(this)">
+    <img src="image/like_b.svg" class="heart"  alt="empty heart" onclick="swap(this)">
     </div>
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     

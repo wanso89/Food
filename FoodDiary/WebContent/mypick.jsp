@@ -6,7 +6,7 @@
    <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Food Diary</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main-css.css">
@@ -84,11 +84,12 @@ swal({
         <li><a href="main.jsp">FoodFeed</a></li>
         <li><a href="mydiary.jsp">My Diary</a></li>
         <li class="active"><a href="#">My Pick</a></li>
-        <li><a href="#">Ranking</a></li>
+        <li><a href="ranking.jsp">Ranking</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
 
   <br><br>
  <div class="container text-center">    
