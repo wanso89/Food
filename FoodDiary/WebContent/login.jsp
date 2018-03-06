@@ -10,9 +10,9 @@
         	<img src="image_logo/logo.png" class="img-responsive center-block">
         </div>
         <div class="modal-body">
-          <form id="login">           	     
+          <form id="login" action="MemberLoginServlet" method="post">           	     
 					<div>
-                        <input type="text" class="form-control " name="userid" placeholder="Userid" autofocus>
+                        <input type="text" class="form-control " name="userId" placeholder="Userid" autofocus>
                     </div>
                     <div id="pw">
                         <input type="password" class="form-control" name="passwd" placeholder="Password">

@@ -29,18 +29,34 @@
 </head>
 <body>
 
-<c:if test="${sessionScope.result == true }">
+<c:if test="${result == true}">
 <script>
 swal({
 	title : "회원가입 성공!",
 	icon : "success",
 	button : "확인"
-})
+});
 </script>
-<%
-	session.invalidate();
-%>
 </c:if>
+<c:if test="${loginResult == true}">
+      <script>
+      swal({
+      	title : "로그인 성공!",
+      	icon : "success",
+      	button : "확인"
+      });
+  </script>
+  </c:if>
+  
+     <c:if test="${loginResult == false}">
+		<script>
+		swal({
+			title : "로그인 실패!",
+			icon : "success",
+			button : "확인"
+			});
+		</script>
+		</c:if>
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
