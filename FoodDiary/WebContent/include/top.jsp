@@ -11,7 +11,7 @@
       <button class="btn btn-danger navbar-btn ">Upload</button>
       </div>
      
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="main.jsp">Logo</a>
     </div>
     <div class="navbar-right text-center" id="myNavbar">
       <ul id="mainNav" class="nav navbar-nav ">
