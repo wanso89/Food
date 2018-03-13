@@ -7,7 +7,7 @@
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
-        	<img src="image_logo/logo.png" class="img-responsive center-block">
+        	<img src="image/logo.png" class="img-responsive center-block">
         </div>
         <div class="modal-body">
           <form id="login" action="MemberLoginServlet" method="post">           	     

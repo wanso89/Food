@@ -106,8 +106,8 @@ swal({
 <jsp:include page="include/footer.jsp" flush="true" /><br>
 </footer>
 
-<jsp:include page="member.jsp" flush="true" /><br>
-<jsp:include page="login.jsp" flush="true"/><br>
+<jsp:include page="logIn/member.jsp" flush="true" /><br>
+<jsp:include page="logIn/login.jsp" flush="true"/><br>
 
 <script>
 function swap(pic)

@@ -57,7 +57,7 @@ margin-top: 10px;
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
-           <img src="image_logo/logo.png" class="img-responsive center-block">
+           <img src="logo/logo.png" class="img-responsive center-block">
         </div>
         <div class="modal-body">
           <form id="member" action="MemberJoinServlet" method="post" onsubmit="return submitCheck(this)">                   
