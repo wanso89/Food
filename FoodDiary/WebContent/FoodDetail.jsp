@@ -13,20 +13,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  
  <style>
 .rel{
 	position: relative;
 }
 .heart{
 	position: absolute;
-	top: 7px;
+	top: 8px;
+	max-width:50%;
+	right:8px;
 }
- 
+#report{
+float: right;
+max-width:12.5%;
+}
+
  </style>
+
 </head>
 <body>
-
 <c:if test="${sessionScope.result == true }">
 <script>
 swal({
@@ -40,8 +45,7 @@ swal({
 %>
 </c:if>
 <!-- header -->
-<jsp:include page="include/top.jsp" flush="true" /><br>    
-
+<jsp:include page="include/top.jsp" flush="true" /><br>   
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -55,7 +59,7 @@ swal({
       <ul class="nav navbar-nav nav-tabs">
         <li><a href="main.jsp">FoodFeed</a></li>
         <li><a href="mydiary.jsp">My Diary</a></li>
-        <li class="active"><a href="#">My Pick</a></li>
+        <li><a href="mypick.jsp">My Pick</a></li>
         <li><a href="ranking.jsp">Ranking</a></li>
       </ul>
     </div>
@@ -63,58 +67,43 @@ swal({
 </nav>
 
 
-  <br><br>
- <div class="container text-center">    
-  <div class="row">
-    <div class="col-sm-2 col-sm-offset-1">
-		<button class="btn btn-danger navbar-btn">Category1</button>
-    </div>
-  	<div class="col-sm-2">
-		<button class="btn btn-danger navbar-btn">Category2</button>
-    </div>
- 	<div class="col-sm-2">
-		<button class="btn btn-danger navbar-btn">Category3</button>
-    </div>
-    <div class="col-sm-2">
-		<button class="btn btn-danger navbar-btn">Category4</button>
-    </div>
-     <div class="col-sm-2">
-		<button class="btn btn-danger navbar-btn">Category5</button>
-    </div>
-</div>
-</div>
-
  <br>
 <div class="container">    
   <div class="row">
-    <div class="col-sm-4  rel">
+	 
+	     <div class="col-sm-8  rel">
       <div class=" panel-default">
-
+        <div class="col-sm-3 col-sm-offset-9 ">
+    <img src="image/like_b.svg" class="heart"  alt="empty heart" onclick="swap(this)">
+    </div>
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
     
       </div>
     </div>
     
-  	<div class="col-sm-4  rel">
-      <div class=" panel-default">
-
-    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
+    	<div class="col-sm-4">
+     	 <div class=" panel-default">
+     
+			<img id="report" alt="report" src="image/exclamation-mark.svg">
+			<h2>Food Detail</h2>
+   			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ligula ornare, gravida ipsum eget, auctor diam. Proin diam quam, venenatis in laoreet feugiat, tristique in mi. Morbi ut ipsum nec orci porta posuere. Donec vestibulum neque at odio tempor auctor. Nulla ut felis sollicitudin, ultricies metus at, egestas nulla. Aliquam elementum nulla ut lacus viverra pharetra. Etiam eget gravida lectus. Donec fringilla, felis eu sagittis ullamcorper</p>
+    		
+    	 </div>
+    	</div>
     
-      </div>
     </div>
- <div class="col-sm-4  rel">
-      <div class=" panel-default">
-
-    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
-    
-      </div>
-    </div>
-    </div>
-    </div>
+ </div>
 <br><br>
 <div class="container">    
   <div class="row">
-    <div class="col-sm-4  rel">
+    <div class="col-sm-3  ">
+      <div class=" panel-default">
+
+    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
+    
+      </div>
+    </div>
+     <div class="col-sm-3  ">
       <div class=" panel-default">
 
     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
@@ -122,52 +111,18 @@ swal({
       </div>
     </div>
     
-  	<div class="col-sm-4  rel">
+  	<div class="col-sm-6">
       <div class=" panel-default">
-
-    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
+	<h2>댓글	(게시판)</h2>
+    <p>Lorem ipsum Integer in ligula ornare, gravida ipsum eget, auctor diam. Proin diam quam, venenatis in laoreet feugiat, tristique in mi. Morbi ut ipsum nec orci porta posuere. Donec vestibulum neque at odio tempor auctor. Nulla ut felis sollicitudin, ultricies metus at, egestas nulla. Aliquam elementum nulla ut lacus viverrar</p>
     
       </div>
     </div>
- <div class="col-sm-4  rel">
-      <div class=" panel-default">
 
-    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
-    
-      </div>
     </div>
     </div>
     </div>
-<br><br>
-<div id="demo" class="container collapse">    
-  <div class="row">
-     <div class="col-sm-4  rel">
-      <div class=" panel-default">
 
-    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
-    
-      </div>
-    </div>
-  	 <div class="col-sm-4  rel">
-      <div class=" panel-default">
-
-    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
-    
-      </div>
-    </div>
- 	 <div class="col-sm-4  rel">
-      <div class=" panel-default">
-
-    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
-    
-      </div>
-    </div>
-</div><br><br>
-</div>
-
-<div class="container text-center">
-<button type="button" class="btn btn-danger btn-lg btn-info" data-toggle="collapse" data-target="#demo">View More</button>
-</div>
 
 <br>
 <br>
