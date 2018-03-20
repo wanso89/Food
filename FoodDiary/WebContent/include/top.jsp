@@ -11,14 +11,14 @@
       <button class="btn btn-danger navbar-btn ">Upload</button>
       </div>
      
-      <a class="navbar-brand" href="main.jsp">Logo</a>
+      <a class="navbar-brand" href="main.jsp">Food Diary</a>
     </div>
     <div class="navbar-right text-center" id="myNavbar">
       <ul id="mainNav" class="nav navbar-nav ">
         <li><a data-toggle="modal" data-target="#myMember" href="#myMember"><span class="glyphicon glyphicon-log-in" ></span>Join Us</a></li>
-        <li><a data-toggle="modal" data-target="#myModal" href="#myModal">Login Us</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">QnA</a></li>
+        <li><a data-toggle="modal" data-target="#myModal" href="#myModal">Login</a></li>
+        <li><a href="AboutUs.jsp">About Us</a></li>
+        <li><a href="QnA.jsp">QnA</a></li>
       </ul>
     </div>
   </div>

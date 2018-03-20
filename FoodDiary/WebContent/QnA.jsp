@@ -47,7 +47,7 @@ swal({
         <li><a data-toggle="modal" data-target="#myMember" href="#myMember"><span class="glyphicon glyphicon-log-in" ></span>Join Us</a></li>
         <li><a data-toggle="modal" data-target="#myModal" href="#myModal">Login</a></li>
         <li><a href="AboutUs.jsp">About Us</a></li>
-        <li><a href="QnA.jsp">QnA</a></li>
+        <li><a href="#">QnA</a></li>
       </ul>
     </div>
   </div>
@@ -55,8 +55,8 @@ swal({
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h2>About Us</h2>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ligula ornare, gravida ipsum eget, auctor diam. Proin diam quam, venenatis in laoreet feugiat, tristique in mi. Morbi ut ipsum nec orci porta posuere. Donec vestibulum neque at odio tempor auctor. Nulla ut felis sollicitudin, ultricies metus at, egestas nulla. Aliquam elementum nulla ut lacus viverra pharetra. Etiam eget gravida lectus. Donec fringilla, felis eu sagittis ullamcorper</p>
+    <h2>QnA</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ligula ornare, gravida ipsum eget, auctor diam. Proin diam quam, venenarper</p>
     
   
   </div>
@@ -69,35 +69,40 @@ swal({
  <br>
 <div class="container">    
   <div class="row">
-    <div class="col-sm-12  rel">
-      <div class=" panel-default">
-    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
-      </div>
-    </div>
-    </div>
-    </div>
-<br><br>
-<div class="container">    
-  <div class="row">
-    <div class="col-sm-4  ">
-      <div class=" panel-default">
-
-    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
+  
+	    <div class="col-sm-8">
+	      <div class=" panel-default">
+	    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive " style="width:100%" alt="Image">
+	      </div>
+	    </div>
+	    
+	      <div class="col-sm-4" >
+	     	      <form>           	     
+					<div id="title">
+                        <input type="text" class="form-control " name="title" placeholder="Title" autofocus>
+                    </div>
+                    <div id="pw">
+                        <input type="password" class="form-control" name="passwd" placeholder="Password">
+                    </div>
+                    <br />
+                     <div id="comment">
+                         <textarea class="form-control" rows="12" id="comment"  placeholder="Comment"></textarea>
+                    </div>
+                   <br/>
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-danger btn-block" value="글쓰기" />
+                        </div>
+                        
+                    
+                </form>
+	    </div>
     
-      </div>
     </div>
-    
-  	<div class="col-sm-8 ">
-      <div class=" panel-default">
+</div>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ligula ornare, gravida ipsum eget, auctor diam. Proin diam quam, venenatis in laoreet feugiat, tristique in mi. Morbi ut ipsum nec orci porta posuere. Donec vestibulum neque at odio tempor auctor. Nulla ut felis sollicitudin, ultricies metus at, egestas nulla. Aliquam elementum nulla ut lacus viverra pharetra. Etiam eget gravida lectus. Donec fringilla, felis eu sagittis ullamcorper</p>
-    
-      </div>
-    </div>
 
-    </div>
-    </div>
-    </div>
+
+  
 
 
 <br>
@@ -108,6 +113,7 @@ swal({
 
 <jsp:include page="logIn/member.jsp" flush="true" /><br>
 <jsp:include page="logIn/login.jsp" flush="true"/><br>
+
 
 
 </body>
