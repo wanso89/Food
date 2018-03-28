@@ -38,7 +38,8 @@ swal({
 });
 </script>
 </c:if>
-<c:if test="${loginResult == true}">
+<c:choose>
+	<c:when test="${loginResult == true}">
       <script>
       swal({
       	title : "로그인 성공!",
@@ -46,9 +47,8 @@ swal({
       	button : "확인"
       });
   </script>
-  </c:if>
-  
-     <c:if test="${loginResult == false}">
+   </c:when>
+  	<c:when test="${loginResult == false}">
 		<script>
 		swal({
 			title : "로그인 실패!",
@@ -56,8 +56,8 @@ swal({
 			button : "확인"
 			});
 		</script>
-		</c:if>
-
+	</c:when>
+	</c:choose>
 <!-- header -->
 <jsp:include page="include/top.jsp" flush="true" /><br>    
 
